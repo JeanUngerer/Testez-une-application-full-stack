@@ -8,4 +8,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/unit_test?createDatabaseIfNotExist=true
     username: root
-    password: admin1
+    password: admin
+
+lombok:
+  addLombokGeneratedAnnotation: true
