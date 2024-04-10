@@ -10,7 +10,7 @@ Git clone:
 
 Go inside folder:
 
-> cd yoga
+> cd front
 
 Install dependencies:
 
