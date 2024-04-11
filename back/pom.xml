@@ -104,12 +104,14 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.5</version>
+				<version>0.8.7</version>
 				<configuration>
 					<excludes>
 						<exclude>com/openclassrooms/**/models/**</exclude>
 						<exclude>com/openclassrooms/**/*Dto.*</exclude>
+						<exclude>com/openclassrooms/**/*MapperImpl.*</exclude>
 						<exclude>**/config/*</exclude>
+						<exclude>*lombok*</exclude>
 					</excludes>
 				</configuration>
 				<executions>

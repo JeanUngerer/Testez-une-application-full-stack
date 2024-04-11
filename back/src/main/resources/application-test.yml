@@ -10,5 +10,4 @@ spring:
     username: root
     password: admin
 
-lombok:
-  addLombokGeneratedAnnotation: true
+
