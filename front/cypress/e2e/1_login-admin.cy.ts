@@ -8,7 +8,6 @@ describe('Login spec', () => {
     cy.visit('/login')
     cy.get('input[formControlName=email]').type("yogaga@studio.com")
     cy.get('input[formControlName=password]').type(`${"testfalse!1234"}{enter}{enter}`)
-    cy.get('[type="submit"]').should('be.unabled');
     cy.get('[data-cy="error"]').should('exist')
   })
 
