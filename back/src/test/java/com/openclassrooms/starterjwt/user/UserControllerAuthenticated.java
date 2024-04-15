@@ -35,7 +35,7 @@ public class UserControllerAuthenticated {
     AuthUtils authUtils;
 
 
-
+// TODO mock SecurityContextHolder.getContext().getAuthentication().getPrincipal();
     @Test
     public void whenDelete_thenReturnOk() throws Exception {
         String email = "testUserControllerUnauthorized@example.com";
