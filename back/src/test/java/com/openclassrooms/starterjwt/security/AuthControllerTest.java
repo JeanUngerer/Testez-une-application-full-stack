@@ -1,4 +1,4 @@
-package com.openclassrooms.starterjwt.auth;
+package com.openclassrooms.starterjwt.security;
 
 import com.openclassrooms.starterjwt.models.User;
 import com.openclassrooms.starterjwt.payload.request.LoginRequest;

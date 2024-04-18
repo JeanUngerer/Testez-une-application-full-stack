@@ -1,6 +1,5 @@
-package com.openclassrooms.starterjwt.auth.jwt;
+package com.openclassrooms.starterjwt.security.jwt;
 
-import com.openclassrooms.starterjwt.security.jwt.AuthEntryPointJwt;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

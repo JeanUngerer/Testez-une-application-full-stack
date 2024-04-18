@@ -53,6 +53,13 @@ Launching e2e test:
 
 > npm run e2e
 
+Run all your end-to-end Cypress tests
+> npx cypress run
+
+To run it on a specific browser
+> npx cypress run --browser chrome
+
+
 Generate coverage report (you should launch e2e test before):
 
 > npm run e2e:coverage
@@ -70,3 +77,4 @@ Launching test:
 for following change:
 
 > npm run test:watch
+
