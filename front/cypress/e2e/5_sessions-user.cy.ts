@@ -27,7 +27,7 @@ describe('user sessions spec', () => {
   });
 
   it('should register a user', () => {
-    cy.visit('http://localhost:4200/register')
+    cy.visit('/register')
     cy.get('input[formControlName="firstName"]').type('TestFirstName')
     cy.get('input[formControlName="lastName"]').type('TestLastName')
     cy.get('input[formControlName="email"]').type('testemail@test.com')
