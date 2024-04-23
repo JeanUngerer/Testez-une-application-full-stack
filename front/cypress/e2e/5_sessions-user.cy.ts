@@ -80,4 +80,9 @@ describe('user sessions spec', () => {
     cy.get('[data-cy="delete-session"]').click();
     cy.get('[data-cy="session-card"]').should("not.exist");
   });
+
+  it('verify that unknown url redirect to not found', () => {
+    cy.visit('/not/valid')
+    cy.url().should('include', '/404')
+  })
 })
