@@ -48,16 +48,11 @@ By default the admin account is:
 ### Test
 
 #### E2E
+* Make sure backend is running to execute e2e tests.
 
 Launching e2e test:
 
 > npm run e2e
-
-Run all your end-to-end Cypress tests
-> npx cypress run
-
-To run it on a specific browser
-> npx cypress run --browser chrome
 
 
 Generate coverage report (you should launch e2e test before):
