@@ -18,6 +18,24 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.*;
 
+/*
+ * This class uses several annotations for controlling the execution of the tests. Let me briefly explain them.
+ *
+ * @SpringBootTeset: It indicates that the context loaded will be a SpringBootApplication. It is used to integrate
+ * with all the features of Spring Boot including auto-configuration of mock and spying beans.
+ *
+ * @AutoConfigureMockMvc(addFilters = false): It ensures that a MockMvc instance is available. The 'addFilters = false'
+ * attribute is to disable security or any other standard filters.
+ *
+ * @ActiveProfiles("test"): It activates 'test' profile for these tests. It is useful when you want to change
+ * configuration for testing.
+ *
+ * @Autowired: It performs field injection of beans directly on the annotated field.
+ *
+ * @MockBean: It replaces any existing bean of the same type in the application context with a Mockito mock.
+ * It's useful when you want to mock a bean and reset it after every test method execution.
+ *
+ */
 @SpringBootTest
 @ActiveProfiles("test")
 @AutoConfigureMockMvc(addFilters = false)

@@ -1,5 +1,25 @@
 package com.openclassrooms.starterjwt.security.jwt;
 
+/**
+ * The following class showcases the testing and mocking annotations within a test case.
+ *
+ * These annotations are an integral part of Mockito framework which is used for effective unit testing in Java.
+ * The annotations make our test code clean and manageable.
+ *
+ * Mockito maintains a very nice balance between the flexibility and expressiveness of the tests.
+ *
+ * @ExtendWith : is a means to have custom post-processing code to further configure the instantiated test class.
+ *
+ * @InjectMocks : is used to inject mock fields into the tested object automatically.
+ *
+ * @Mock : shorthand for creating mock instance.
+ *
+ * Mocking allows us to isolate the class being tested and hence if the test fails,
+ * we are certain about the class at fault and need not doubt other collaborators/ real objects.
+ *
+ * Mocks also allow us to verify the calls the system under test makes on its collaborators.
+ *
+ */
 import com.openclassrooms.starterjwt.security.services.UserDetailsImpl;
 import com.openclassrooms.starterjwt.security.services.UserDetailsServiceImpl;
 import lombok.extern.log4j.Log4j2;

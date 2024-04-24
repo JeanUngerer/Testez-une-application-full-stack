@@ -15,6 +15,25 @@ import javax.servlet.http.HttpServletResponse;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * This is a unit test for AuthEntryPointJwt class.
+ * The class utilizes several testing and mocking utilities provided by the Spring, Mockito, and JUnit frameworks.
+ *
+ * It is annotated with @SpringBootTest to indicate that it is a context-based test and to load
+ * an ApplicationContext.
+ *
+ * @ActiveProfiles is used to pick 'test' profile environment.&
+ *
+ * To disable installing of default spring security filters, @AutoConfigureMockMvc(addFilters = false)
+ * is used.
+ *
+ * With @InjectMocks, Mockito injects mocks created by MockitoAnnotations.openMocks(this) into
+ * authEntryPointJwt private field.
+ * The @BeforeEach-annotated setup() method initializes resources needed for each test.
+ * MockHttpServletRequest and MockHttpServletResponse are mock implementations of the HttpServletRequest
+ * and HttpServletResponse interfaces, respectively.
+ * CredentialsExpiredException represents an authentication exception for test scenarios.
+ */
 @SpringBootTest
 @ActiveProfiles("test")
 @AutoConfigureMockMvc(addFilters = false)
@@ -43,6 +62,4 @@ public class AuthEntryPointJwtTest {
         assertEquals("{\"path\":\"\",\"error\":\"Unauthorized\",\"message\":\"TEST\",\"status\":401}",
           response.getContentAsString());
     }
-
-
 }

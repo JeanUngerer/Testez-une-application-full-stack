@@ -14,6 +14,15 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * This is a test class for the validation of the Teacher model and its DTO.
+ * The purpose of these tests is to ensure that our validation rules have been correctly implemented.
+ * We use the 'LocalValidatorFactoryBean' to validate our classes, it's a part of the Spring framework.
+ *
+ * We have two main test methods for each class (`TeacherDto` and `Teacher`),
+ * one where we expect no violations, and one where we do expect validation violations, to make sure both positive
+ * and negative cases are working as expected.
+ */
 @SpringBootTest
 @ActiveProfiles("test")
 @AutoConfigureMockMvc(addFilters = false)
